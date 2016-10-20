@@ -1,7 +1,7 @@
 //
 // Created by Diane Lorena on 10/6/16.
 //
-
+#include <iostream>
 
 #ifndef HOMEWORKFIVE_SHOP_H
 #define HOMEWORKFIVE_SHOP_H
@@ -13,7 +13,6 @@ class Customer
 private:
     string name;
     int customerId;
-    int totalCustomerCount = 0;
     double outstandingBill;
     //std::vector<order> totalOrders;
 
@@ -21,13 +20,13 @@ public:
 
     Customer();
 
-    void addCustomer(Customer);
     string getName();
     void setName(string);
     int getCustomerId();
     void setCustomerId(int);
     double getOutstandingBill();
     void setOutstandingBill(double);
+    static Customer customerCreator();
     //void addOrder(order);
     //void browseRobotModels();
 };

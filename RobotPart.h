@@ -1,6 +1,8 @@
 //
 // Created by Diane Lorena on 10/9/16.
 //
+#include <vector>
+#include<string>
 
 #ifndef HOMEWORKFIVE_ROBOTPART_H
 #define HOMEWORKFIVE_ROBOTPART_H
@@ -29,6 +31,10 @@ public:
     void setPartDescription(string);
     string getPartDescription();
 
+    void setActiveStatus(bool);
+    bool getActiveStatus();
+
+
 
 
 protected:
@@ -38,6 +44,7 @@ protected:
     double weight;
     double cost;
     string description;
+    bool activeStatus = false;
 };
 
 #endif //HOMEWORKFIVE_ROBOTPART_H
