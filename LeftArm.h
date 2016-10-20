@@ -9,12 +9,12 @@
 
 using namespace std;
 
-class Arm: public RobotPart
+class LeftArm: public RobotPart
 {
     private:
         int powerConsume;
     public:
-        Arm();
+        LeftArm();
         void setPowerConsume(int);
         int getPowerConsume();
 };

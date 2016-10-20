@@ -1,28 +1,27 @@
 //
-// Created by Diane Lorena on 10/9/16.
+// Created by Diane Lorena on 10/17/16.
 //
+
+#include "RightArm.h"
 #include<string>
 #include <iostream>
 #include <vector>
 #include "RobotPart.h"
-#include "Arm.h"
+
 
 using namespace std;
 
-Arm::Arm()
+RightArm::RightArm()
 {
 
 };
 
-void Arm::setPowerConsume(int numPowerConsume)
+void RightArm::setPowerConsume(int numPowerConsume)
 {
     powerConsume = numPowerConsume;
 }
 
-int Arm::getPowerConsume()
+int RightArm::getPowerConsume()
 {
     return powerConsume;
 }
-
-
-

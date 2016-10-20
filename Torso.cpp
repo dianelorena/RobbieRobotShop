@@ -9,19 +9,19 @@
 
 using namespace std;
 
-Torso::Torso()
+Torso:: Torso()
 {
 
 };
 
-void Torso::setBatteryComponentNum(int batteryNum)
+void Torso::setMaxBatteries(int batteryNum)
 {
-    batteryComponentNum = batteryNum;
+    maxBatteries = batteryNum;
 }
 
-int Torso::getBatteryComponentNum()
+int Torso::getMaxBatteries()
 {
-    return batteryComponentNum;
+    return maxBatteries;
 
 }
 

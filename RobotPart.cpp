@@ -1,6 +1,9 @@
 //
 // Created by Diane Lorena on 10/9/16.
 //
+
+//this creates a part and has all variables that all body
+// parts share in common
 #include<string>
 #include <vector>
 
@@ -72,6 +75,21 @@ string RobotPart::getPartDescription()
 {
     return description;
 }
+
+// Active Status 1 == part is active and 0 == part is not active
+
+void RobotPart::setActiveStatus(bool partActiveStatus)
+{
+    activeStatus = partActiveStatus;
+}
+
+
+bool RobotPart::getActiveStatus()
+{
+    return activeStatus;
+}
+
+
 
 
 

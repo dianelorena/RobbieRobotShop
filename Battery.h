@@ -12,11 +12,12 @@ using namespace std;
 class Battery: public RobotPart
 {
 private:
-    int killoWattHour;
+    int energyBatteryContains;
 public:
     Battery();
-    void setkilloWattHour(int);
-    int getkilloWatHour();
+    void setEnergyContained(int);
+    int getEnergyContained();
+    static Battery batteryGenerator();
 };
 
 #endif //HOMEWORKFIVE_BATTERY_H
